@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>NorCal RoboRumble</title>
+    <meta name="description" content="NorCal RoboRumble Robotics Competition">
+    <meta name="author" content="NorCal RoboRumble">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800%7CRanga:700" rel="stylesheet">
+
+    <!-- All CSS -->
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" href="font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="animate.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <style type="text/css">
+        <!--
+        A {font-family:Arial, Sans-serif; font-size:12px; text-decoration:underline; font-weight:bold; color:#000000;}
+        TD {font-family:Arial, Sans-serif; font-size:12px; text-decoration:none; font-weight:none; color:#000000;}
+        BODY {font-family:Arial, Sans-serif; font-size:12px; text-decoration:none; font-weight:none; color:#000000;}
+        .contenttitle {font-family:Arial, Sans-serif; font-size:18px; text-decoration:none; font-weight:bold; color:#000000;}
+        .hometitle {font-family:Arial, Sans-serif; font-size:14px; text-decoration:none;  font-weight:bold; color:#000000;}
+        .footer {font-family:Arial, Sans-serif; font-size:10px; text-decoration:none; font-weight:none; color:#000000;}
+        ul {font-family:Arial, Sans-serif; font-size:12px; text-decoration:none; font-weight:none; color:#000000; text-indent: 0px; list-style-position: outside; list-style-type: square; padding: 0px; margin: 20px; }
+        .ul-sub {font-family:Arial, Sans-serif; font-size:12px; text-decoration:none; font-weight:none; color:#000000; text-indent: 10px; list-style-position: inside; list-style-type: circle; padding: 0px; margin: 0px; }
+        .blockquote {display: block;margin-block-start: 1em;margin-block-end: 1em;margin-inline-start: 40px;margin-inline-end: 40px;}
+        -->
+    </style>
+    
+</head>
+<body class="mrs-v5 bg-white">
+<!-- Page Loader Start -->
+<div class="marshall-loading-screen" style="display: none;">
+    <div class="marshall-loading-icon">
+        <div class="marshall-loading-inner">
+            <div class="marshall-load" data-name="M"></div>
+        </div>
+    </div>
+</div><!-- End .loading-screen -->
+
+<div class="marshall-container">
+
+
+    <font class=contenttitle>Unified Sumo Robot Rules</font><P>
+
+    <table border=0 cellpadding=0 cellspacing=0>
+        <tr>
+            <td valign=top>
+                <table border=0 cellpadding=0 cellspacing=0>
+                    <tr>
+                        <td valign=top align=right><b>Name of Event:&nbsp;</b></td><td valign=top>Sumo</td></tr>
+                    <tr>
+                        <td valign=top align=right><b>Robots per Event:&nbsp;</b></td><td valign=top>Two</td></tr>
+                    <tr>
+                        <td valign=top align=right><b>Length of Event:&nbsp;</b></td><td valign=top>3 minutes</td></tr>
+                    <tr>
+                        <td valign=top align=right><b>Robot Weight Range:&nbsp;</b></td><td valign=top>As Below</td></tr>
+                    <tr>
+                        <td valign=top align=right><b>Robot Dimensions:&nbsp;</b></td><td valign=top>As Below</td></tr>
+                    <tr>
+                        <td valign=top align=right><b>Arena Specifications:&nbsp;</b></td><td valign=top>As Below</td></tr>
+                    <tr>
+                        <td valign=top align=right><b>Robot Control:&nbsp;</b></td><td valign=top>Autonomous and Remote-control</td></tr>
+                    <tr>
+                        <td valign=top align=right><b>Engineering&nbsp;Principles:&nbsp;</b></td><td valign=top>Torque, mechanical engineering, electrical engineering, computer science (for autonmous classes.)</td></tr>
+                    <tr>
+                        <td valign=top align=right><b>Event Summary:&nbsp;</b></td><td valign=top>Two robots compete in a head-to-head match following the basic system of traditional human sumo matches.  Robots are allowed no weapons, and are not allowed to flip each other.  The sole purpose is a pushing match between the two robots to force the other from the arena.  Multiple weight classes and control systems are allowed (autonomous compete against autonomous and R/C against R/C - they are separate classes and do not compete against each other.)</td>
+                    </tr>
+                </table>
+            </td>
+            <td valign=top>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td valign=top><object width="302" height="242"><param name="movie" value="http://www.youtube.com/v/dGx7ohIo8pA?fs=1&amp;hl=en_US"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/dGx7ohIo8pA?fs=1&amp;hl=en_US" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="302" height="242"></embed></object></td>
+            <td valign=top>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+    </table>
+
+    <p>
+
+        <b>Section 1: Definition of the Sumo Match</b></p>
+    <div class="blockquote">
+
+        <p><b>Article 1</b>
+            [Definition] A match is fought between two teams, each team having one or more contestants. Only one team member may approach the ring; other team members must watch from the audience. In accordance with the game rules (hereafter referred to as "these rules",) each team competes on a Dohyo (sumo ring) with a robot that they have constructed themselves to the specifications in Section 3. The match starts at the judge's command and continuous until a contestant earns two Yuhkoh points. The judge determines the winner of the match.</p>
+    </div>
+    <p><b>Section 2: Requirements for the Dohyo (Sumo Ring)</b>
+        <img src="../images/sumo-ring.gif" alt="" width="219" height="219" border="0" align=right valign=top>
+
+    <div class="blockquote">
+
+
+        <b>Article 2</b>
+        [Dohyo Interior] The dohyo interior is defined as the playing surface surrounded by and including the border line. Anywhere outside this area is called the dohyo exterior.</p>
+    <p><b>Article 3</b> [Dohyo Specifications] </p>
+    <p>1. The ring shall be circular in shape and of the appropriate dimensions for the given size class.</p>
+
+
+    <p>2. Shikiri lines (starting lines) consist of two painted parallel brown (or equivalent for absorption of IR light) lines centered in the ring with appropriate width and spacing for the given class. The separation distance between the lines is measured to their outside edges.</p>
+
+    <p>3. The border line is marked as a white circular ring of a width appropriate for the given class on the outer edge of the playing surface. The ring area extends to the outside edge of this circular line.</p>
+    <P>
+
+
+    <table border=0 cellspacing="2" cellpadding="0">
+        <tbody>
+        <tr>
+            <td colspan=4><b>Dohyo Construction & Painting</b></td>
+            <td valign=bottom colspan=3 bgColor=#bbbbbb><center>&nbsp;&nbsp;  <b>Shikiri Lines</b></center></td>
+            <td valign=bottom rowspan=2><center><b>Border<br>Width</b></center></td>
+        </tr>
+        <tr>
+            <td valign=bottom><b>Class</b></td>
+            <td valign=bottom>&nbsp;&nbsp; <b>Height</b></td>
+            <td valign=bottom>&nbsp;&nbsp; <b>Diameter</b></td>
+            <td valign=bottom>&nbsp;&nbsp; <b>Material</b></td>
+            <td valign=bottom><b>&nbsp;Width&nbsp;</b></center></td>
+            <td valign=bottom><b>&nbsp;Length&nbsp;</b></center></td>
+            <td valign=bottom><b>&nbsp;Separation&nbsp;</b></center></td>
+        </tr>
+        <tr bgColor=#bbbbbb>
+            <td><b>Mega/Humanoid</b></td>
+            <td align=right>&nbsp;&nbsp; 5.00 cm</td>
+            <td align=right>&nbsp;&nbsp; 154.0 cm</td>
+            <td>&nbsp;&nbsp; Polyurethane coated steel plate</td>
+            <td align=right> 2 cm</td>
+            <td align=right> 20 cm</td>
+            <td align=right> 20 cm</td>
+            <td align=right> 5 cm</td>
+        </tr>
+        <tr>
+            <td><b>Mini/Lego</b> </td>
+            <td align=right> 2.50 cm</td>
+            <td align=right> 77.0 cm</td>
+            <td>&nbsp;&nbsp; Laminate/Melamine coated wood</td>
+            <td align=right> 1 cm</td>
+            <td align=right> 10 cm</td>
+            <td align=right> 10 cm</td>
+            <td align=right> 2.5 cm</td>
+        </tr>
+        <tr bgColor=#bbbbbb>
+            <td><b>Micro</b> </td>
+            <td align=right> 1.25 cm</td>
+            <td align=right> 38.5 cm</td>
+            <td>&nbsp;&nbsp; Melamine composite</td>
+            <td align=right> 0.5 cm</td>
+            <td align=right> 5 cm</td>
+            <td align=right> 5 cm</td>
+            <td align=right>&nbsp;&nbsp;   1.25 cm</td>
+        </tr>
+        <tr>
+            <td><b>Nano</b> </td>
+            <td align=right>&nbsp;&nbsp;  0.625 cm</td>
+            <td align=right>19.25 cm</td>
+            <td>&nbsp;&nbsp; Melamine composite</td>
+            <td align=right>0.25 cm</td>
+            <td align=right>2.5 cm</td>
+            <td align=right>2.5 cm</td>
+            <td align=right>&nbsp;&nbsp;  0.625 cm</td>
+        </tr>
+    </table>
+
+    <p><b>Article 4</b>
+        [Dohyo Exterior] There should be a space appropriate for the given class outside the outer edge of the ring. This space can be of any color, and can be of any material or shape as long as the basic concepts of these rules are not violated. This area, with the ring in the middle, is to be called the "ring area". Any markings or parts of the ring platform outside the minimum dimensions will also be considered in the ring area.</p>
+    </div>
+
+    <p><b>Section 3: Requirements for Robots</b></p>
+    <div class="blockquote">
+        <p><b>Article 5</b> [Robot Specifications]</p>
+
+        <p>1. A robot must fit within a square tube of the appropriate dimensions for the given class. A robot may expand in size after a match begins, but must not physically separate into pieces, and must remain a single centralized robot. Robots violating these restrictions shall lose the match. Screws, nuts, and other robot parts with a total mass of less than 5 grams falling off from a robot's body shall not cause the loss of match.</p>
+
+        <p>2. The total mass of a robot at the start of a match must be under the designated weight for the given class.</p>
+
+
+        <table border=0 cellspacing="2" cellpadding="0">
+            <tbody>
+            <tr>
+                <td><b>Class</b></td>
+                <td align=center><b>Height</b></td>
+                <td align=center><b>Width</b></td>
+                <td align=center><b>Length</b></td>
+                <td align=center><b>Weight</b></td>
+            </tr>
+            <tr bgColor=#bbbbbb>
+                <td><b>Mega Sumo - Auton</b></td>
+                <td align=right>unlimited</td>
+                <td align=right>20.0 cm</td>
+                <td align=right>20.0 cm</td>
+                <td align=right>3,000 g</td>
+            </tr>
+            <tr>
+                <td><b>Mega Sumo - R/C</b></td>
+                <td align=right>unlimited</td>
+                <td align=right>20.0 cm</td>
+                <td align=right>20.0 cm</td>
+                <td align=right>3,000 g</td>
+            </tr>
+            <tr bgColor=#bbbbbb>
+                <td><b>Mega Sumo - Network</b></td>
+                <td align=right>unlimited</td>
+                <td align=right>20.0 cm</td>
+                <td align=right>20.0 cm</td>
+                <td align=right>3,000 g</td>
+            </tr>
+            <tr>
+                <td><b>Humanoid - R/C</b></td>
+                <td align=right>50 cm</td>
+                <td align=right>20.0 cm</td>
+                <td align=right>20.0 cm</td>
+                <td align=right>3,000 g</td>
+            </tr>
+            <tr bgColor=#bbbbbb>
+                <td><b>Lego Sumo</b></td>
+                <td align=right>&nbsp;&nbsp;unlimited</td>
+                <td align=right>&nbsp;&nbsp;15.0 cm</td>
+                <td align=right>&nbsp;&nbsp;15.0 cm</td>
+                <td align=right>&nbsp;&nbsp;1,000 g</td>
+            </tr>
+            <tr>
+                <td><b>Mini Sumo</b></td>
+                <td align=right>unlimited</td>
+                <td align=right>10.0 cm</td>
+                <td align=right>10.0 cm</td>
+                <td align=right>500 g</td>
+            </tr>
+            <tr bgColor=#bbbbbb>
+                <td><b>Micro Sumo</b></td>
+                <td align=right>5 cm</td>
+                <td align=right>5.0 cm</td>
+                <td align=right>5.0 cm</td>
+                <td align=right>100 g</td>
+            </tr>
+            <tr>
+                <td><b>Nano Sumo</b></td>
+                <td align=right>2.5 cm</td>
+                <td align=right>2.5 cm</td>
+                <td align=right>2.5 cm</td>
+                <td align=right>25 g</td>
+            </tr>
+        </table>
+        <p>3. <b>Autonomous classes:</b> Nano (25g), Micro (100g), Mini (500g), Lego (1kg), and Mega (3kg) robots must be autonomous.   Any method of control may be used, as long as it is fully contained within the robot and recieves no external signals or directions (human, machine, or otherwise).  Autonomous robot operation must begin automatically no less than five seconds after being started by the user.  Robots starting before the five second mark forfeit that Yuhkoh point.
+        <p>
+            4.  <b>Remote controlled classes:</b> 3kg R/C and Humanoid class robots can be remotely controlled in accordance to FCC regulations, and regulated by tournament officials.  75Mhz controllers are specifically prohibited.  All remote controls must be digitally-mated pairs.  Remote control robots start on a signal from the tournament official. <b>No augmented autonomous controls are allowed on the robot.  All robot motion must be directly due to the teleoperation of the operator. </b>
+        <P>
+            5. <b>Network class:</b>  3kg network controlled robots must be controlled via WiFi communication from the operators computer, via an intermediary router. Direct connections to and from the robot by the operator's controller/computer are prevented by the network configuration and not allowed. Both the operator and the robot will have open connections to the internet. The event will provide two WPA2 PSK secured routers, one for the controller and one for the robot, with publicly addressable IP addresses. Probable router model will be Linksys WRT54GL. Participants should practice control through multiple routers both prior to and on arrival to the event. <b>No augmented autonomous controls are allowed on the robot.  All robot motion must be directly due to the teleoperation of the operator. </b>
+        <P>
+
+
+        <p>6. The robot must have a name or number for registration purposes. Display this name or number on your robot to allow spectators and officials to identify your robot.</p>
+
+        <p>
+            <b>Article 6</b> [Robot Restrictions]
+        </p>
+        <p>1. Jamming devices, such as IR LEDs intended to saturate the opponents IR sensors, are not allowed.</p>
+        <p>2. Parts that could break or damage the ring are not allowed. Do not use parts that are intended to damage the opponents robot or it's operator. Normal pushes and bangs are not considered intent to damage.</p>
+        <p>3. Devices that can store liquid, powder, gas or other substances for throwing at the opponent are not allowed. </p>
+        <p>4. Any flaming devices are not allowed.</p>
+        <p>5. Devices that throw things at your opponent are not allowed.</p>
+        <p>6. Sticky substances to improve traction are not allowed. Tires and other components of the robot in contact with the ring must not be able to pick up and hold a standard 3"x5" index card for more than two seconds.</p>
+        <p>7. Devices to increase down force, such as a vacuum pump or magnets, are only allowed in the 3 kg class.  They are not allowed in all other classes.</p>
+        <p>8. All edges, including but not limited to the front scoop, must not be sharp enough to scratch or damage the ring, other robots, or players. In general, edges with a radius of greater than .005", as would be obtained with a unsharpened .010" thick metal strip, should be ok. Judges or competition officials may require edges that they deem too sharp to be covered with a piece of tape.</p>
+    </div>
+    <p><b>Section 4: How to Carry Sumo Matches</b></p>
+    <div class="blockquote">
+        <p><b>Article 7</b> [How to Carry Sumo Matches]</p>
+        <p>1. One match shall consist of 3 rounds, within a total time of 3 minutes, unless extended by the judges. </p>
+
+        <p>2. The team who wins two rounds or receives two "Yuhkoh" points first, within the time limit, shall win the match. A team receives a "Yuhkoh" point when they win a round. If the time limit is reached before one team can get two "Yuhkoh" points, and one of the teams has received one Yuhkoh point, the team with one Yuhkoh point shall win.</p>
+        <p>3. When the match is not won by either team within the time limit, an extended match may be fought, during which the team who receives the first Yuhkoh point shall win. Alternatively, the winner/loser of the match may be decided by judges, by means of lots, or by a rematch.</p>
+        <p>4. One Yuhkoh point shall be given to the winner when the judges' decision was called for or lots were employed.</p>
+    </div>
+
+    <p><b>Section 5: Start, Stop, Resume, End a Match</b> </p>
+    <div class="blockquote">
+        <p><b>Article 8</b>
+            [Start] Upon the judge's instructions, the two teams bow to each other in the outer ring, approach the ring, and place a robot within their half of the ring on or behind the Shikiri line. (A robot or a part of a robot may not be placed beyond the front edge of the Shikiri line toward the opponent. Note that is not required that a robot be placed directly behind the Shikiri line; it may be offset to the side, as long as it is behind an imaginary line collinear with the Shikiri line.) When the judge announces the start of the round, the teams start their robots, and after a five second pause the robots may start operating. During these five seconds, players must clear out of the ring area.</p>
+        <p><b>Article 9</b> [Stop, Resume] The match stops and resumes when a judge announces so.</p>
+        <p><b>Article 10</b> [End] The match ends when the chief judge announces so. The two teams retrieve the robots from the ring area, and bow.</p>
+    </div>
+
+    <p><b>Section 6: Time of Match</b></p>
+    <div class="blockquote">
+        <p><b>Article 11</b>
+            [Time of Match] One Match will be fought for a total of 3 minutes, starting and ending upon the judge's command. The clock shall start ticking five seconds after the start is announced</p>
+        <p><b>Article 12</b> An extended match, if called for by the judge, shall last for a maximum of 3 minutes.</p>
+        <p><b>Article 13</b> The following are not included in the time of the Match:</p>
+
+        <p>1. The time elapsed after the judge announces Yuhkoh and before the match resumes. The standard delay before the match resumes shall be 30 seconds.</p>
+        <p>2. The time elapsed after a judge announces to stop the match and before the match resumes.</p>
+    </div>
+
+    <p><b>Section 7: Yuhkoh</b></p>
+    <div class="blockquote">
+        <p><b>Article 14</b> [Yuhkoh] One Yuhkoh point shall be given when:</p>
+        <p>1. A team legally forces the body of the opposing robot to touch the space outside the ring, which includes the side of the ring its self.</p>
+        <p>2. A Yuhkoh point is also given in the following cases:</p>
+        <ol>
+            <li type="A">The opposing robot has touched the space outside the ring on its own.</li>
+            <li type="A">Either of the above takes place at the same time that the end of the Match is announced.</li>
+            <li type="A">In the case of humanoid sumo, any part of the opposing robot other than the bottoms of its feet (hands, knees, back, chest, etc.) touches the dohyo or when it is pushed or thrown outside of the ring. </li>
+        </ol>
+        <p>3. When a wheeled robot has fallen over on the ring or in similar conditions, Yuhkoh will not be counted and the match continues.</p>
+        <p>4. When judges' decision is called for to decide the winner, the following points will be taken into considerations:</p>
+        <ol>
+            <li type="A">Technical merits in movement and operation of a robot</li>
+            <li type="A">Penalty points during the match</li>
+            <li type="A">Attitude of the players during the match</li>
+        </ol>
+        <p>5. The match shall be stopped and a rematch started under the following conditions:</p>
+        <ol>
+            <li type="A">The robots are entangled or orbiting each other with no perceivable progress for five seconds. If it is unclear whether progress is being made or not, the judge can extend the time limit for observable progress for up to 30 seconds.</li>
+            <li type="A">Both robots move, without making progress, or stop (at the exact same time) and stay stopped for five seconds without touching each other. However, if one robot stops it's movement first, after five seconds it will be declared as not having the will to fight. In this case the opponent shall receive a Yuhkoh, even if the opponent also stops. If both robots are moving and it isn't clear if progress is being made or not, the judge can extend the time limit up to 30 seconds.</li>
+            <li type="A">If both robots touch the outside of the ring at about the same time, and it can not be determined which touched first, a rematch is called. </li>
+        </ol>
+    </div>
+
+    <p><b>Section 8: Violations</b></p>
+    <div class="blockquote">
+        <p><b>Article 15</b>
+            [Violations] Players performing any of the deeds described in Articles 6, 16, or 17, shall be declared in violation of these rules.</p>
+        <p><b>Article 16</b>
+            [Insults] A player who utters insulting words to the opponent or to the judges or puts voice devices in a robot to utter insulting words or writes insulting words on the body of a robot, or performs any insulting action, is in violation of these rules.</p>
+        <p><b>Article 17</b> [Minor Violations] A minor violation is declared if a player:</p>
+        <p>1. Enters into the ring during the match, except when the player does so to take the robot out of the ring upon the judge's announcement of Yuhkoh or stopping the match. To enter into the ring means:</p>
+        <ol>
+            <li type="A">A part of the player's body is in the ring, or</li>
+            <li type="A">A player puts any mechanical kits into the ring to support his/her body.</li>
+        </ol>
+        <p>2. Performs the following deeds:</p>
+        <ol>
+            <li type="A">Demand to stop the match without appropriate reasons.</li>
+            <li type="A">Take more than 30 seconds before resuming the match, unless the judge announces a time extension.</li>
+            <li type="A">Start operating the robot within five seconds after the chief judge announces the start of the match.</li>
+            <li type="A">Does or says that which disgraces the fairness of the match.</li>
+        </ol>
+    </div>
+
+    <p><b>Section 9: Penalties</b></p>
+    <div class="blockquote">
+        <p><b>Article 18</b>
+            [Penalties] Players who violate these rules by performing the deeds described in Articles 6 and 16 shall lose the match. The judge shall give two Yuhkoh points to the opponent and order the violator to clear out. The violator is not honored with any rights.</p>
+        <p><b>Article 19</b>
+            Each occasion of the violations described in Article 17 shall be accumulated. Two of these violations shall give one Yuhkoh to the opponent.</p>
+        <p><b>Article 20</b> The violations described in Article 17 shall be accumulated throughout one match.</p>
+    </div>
+
+    <p><b>Section 10: Injuries and Accidents during the Match</b></p>
+    <div class="blockquote">
+        <p><b>Article 21</b>
+            [Request to Stop the Match] A player can request to stop the game when he/she is injured or his/her robot had an accident and the game cannot continue.</p>
+        <p><b>Article 22</b>
+            [Unable to Continue the Match] When the game cannot continue due to player's injury or robot's accident, the player who is the cause of such injury or accident loses the match. When it is not clear which team is such a cause, the player who cannot continue the game, or who requests to stop the game, shall be declared as the loser.</p>
+        <p><b>Article 23</b>
+            [Time Required to Handle Injury/Accident] Whether the game should continue in case of injury or accident shall be decided by the judges and the Committee members. The decision process shall take no longer than five minutes.</p>
+        <p><b>Article 24</b>
+            [Yuhkoh Given to the Player who Cannot Continue] The winner decided based on Article 22 shall gain two Yuhkoh points. The loser who already gained one Yuhkoh point is recorded as such. When the situation under Article 22 takes place during an extended match, the winner shall gain one Yuhkoh point.</p>
+    </div>
+
+    <p><b>Section 11: Declaring Objections</b></p>
+    <div class="blockquote">
+        <p><b>Article 25</b> [Declaring Objections] No objections shall be declared against the judges' decisions.</p>
+        <p><b>Article 26</b>
+            The lead person of a team can present objections to the Committee, before the match is over, if there are any doubts in the exercising of these rules. If there are no Committee members present, the objection can be presented to the judge before the match is over.</p>
+    </div>
+
+    <p><b>Section 12: Requirements for Identifications for Robots</b></p>
+    <div class="blockquote">
+        <p><b>Article 27</b>
+            [Identifications for Robots] Some type of name or number, to identify the robot (as registered in the contest) must be easily readable on the robot's body, while the robot is in competition.</p>
+    </div>
+
+    <p><b>Section 13: Miscellaneous</b></p>
+    <div class="blockquote">
+        <p><b>Article 28</b>
+            [Flexibility of Rules] As long as the concept and fundamentals of the rules are observed, these rules shall be flexible enough to encompass the changes in the number of players and of the contents of matches.</p>
+    </div>
+
+
+</div>
+
+<!-- All marshall js files -->
+<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="simplyCountdown.min.js"></script>
+<script type="text/javascript" src="jquery.ajaxchimp.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+
+
+</body></html>

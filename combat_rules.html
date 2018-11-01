@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>NorCal RoboRumble</title>
+    <meta name="description" content="NorCal RoboRumble Robotics Competition">
+    <meta name="author" content="NorCal RoboRumble">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800%7CRanga:700" rel="stylesheet">
+
+    <!-- All CSS -->
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="stylesheet" href="font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="animate.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+
+    <style type="text/css">
+        <!--
+        A {font-family:Arial, Sans-serif; font-size:12px; text-decoration:underline; font-weight:bold; color:#000000;}
+        TD {font-family:Arial, Sans-serif; font-size:12px; text-decoration:none; font-weight:none; color:#000000;}
+        BODY {font-family:Arial, Sans-serif; font-size:12px; text-decoration:none; font-weight:none; color:#000000;}
+        .contenttitle {font-family:Arial, Sans-serif; font-size:18px; text-decoration:none; font-weight:bold; color:#000000;}
+        .hometitle {font-family:Arial, Sans-serif; font-size:14px; text-decoration:none;  font-weight:bold; color:#000000;}
+        .footer {font-family:Arial, Sans-serif; font-size:10px; text-decoration:none; font-weight:none; color:#000000;}
+        ul {font-family:Arial, Sans-serif; font-size:12px; text-decoration:none; font-weight:none; color:#000000; text-indent: 0px; list-style-position: outside; list-style-type: square; padding: 0px; margin: 20px; }
+        .ul-sub {font-family:Arial, Sans-serif; font-size:12px; text-decoration:none; font-weight:none; color:#000000; text-indent: 10px; list-style-position: inside; list-style-type: circle; padding: 0px; margin: 0px; }
+        .blockquote {display: block;margin-block-start: 1em;margin-block-end: 1em;margin-inline-start: 40px;margin-inline-end: 40px;}
+        -->
+    </style>
+
+</head>
+<body class="mrs-v5 bg-white">
+<!-- Page Loader Start -->
+<div class="marshall-loading-screen" style="display: none;">
+    <div class="marshall-loading-icon">
+        <div class="marshall-loading-inner">
+            <div class="marshall-load" data-name="M"></div>
+        </div>
+    </div>
+</div><!-- End .loading-screen -->
+
+<div class="marshall-container">
+
+
+    <font class=contenttitle>Combat Robot Rules</font><P>
+
+    <table border=0 cellpadding=0 cellspacing=0>
+        <tr>
+            <td valign=top>
+                <table border=0 cellpadding=0 cellspacing=0>
+                    <tr>
+                        <td valign=top align=right><b>Name of Event:&nbsp;</b></td><td valign=top>Combat Robots</td></tr>
+                    <tr>
+                        <td valign=top align=right><b>Robots per Event:&nbsp;</b></td><td valign=top>Two</td></tr>
+                    <tr>
+                        <td valign=top align=right><b>Length of Event:&nbsp;</b></td><td valign=top>3 minutes</td></tr>
+                    <tr>
+                        <td valign=top align=right><b>Robot Weight Range:&nbsp;</b></td><td valign=top>5.3 oz-220 lbs (150g-100 kg)</td></tr>
+                    <tr>
+                        <td valign=top align=right><b>Robot Dimensions:&nbsp;</b></td><td valign=top>Any</td></tr>
+                    <tr>
+                        <td valign=top align=right><b>Arena Specifications<br/>(1 and 3 lbs):&nbsp;</b></td><td valign=top>4 feet square, lexan enclosed</td></tr>
+                    <tr>
+                        <td valign=top align=right><b>Arena Specifications<br/>(> 3 lbs):&nbsp;</b></td><td valign=top>40 feet square, lexan enclosed</td></tr>
+                    <tr>
+                        <td valign=top align=right><b>Robot Control:&nbsp;</b></td><td valign=top>Autonomous and Remote-control</td></tr>
+                    <tr>
+                        <td valign=top align=right><b>Engineering&nbsp;Principles:&nbsp;</b></td><td valign=top>Mechanical engineering, electrical engineering, machining, pneumatics and hydrolic control, and computer science (for autonmous classes.)</td></tr>
+                    <tr>
+                        <td valign=top align=right><b>Event Summary:&nbsp;</b></td><td valign=top>Two robots compete in a head-to-head match following the basics of boxing.  Robots are mostly teleoperated, but autonomous control is allowed.  Like boxing, the robots are given three full minutes for a round, in which either one of the robots is knocked out or the match time runs out, and 3 judges decide the winner.  Most anything goes in terms of weapons, excluding water and electrical tasers.</td>
+                    </tr>
+                </table>
+            </td>
+            <td valign=top>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+            <td valign=top><object width="302" height="242"><param name="movie" value="http://www.youtube.com/v/vUtbt5vEt8M?fs=1&amp;hl=en_US"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/vUtbt5vEt8M?fs=1&amp;hl=en_US" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="302" height="242"></embed></object></td>
+            <td valign=top>&nbsp;&nbsp;&nbsp;&nbsp;</td>
+        </tr>
+    </table>
+
+    <P>
+
+        These rules are based on the Robot Fighting League Standard Ruleset.
+    <P>
+
+        1.	General
+    <div class="blockquote">
+        1.1.	All participants build and operate robots at their own risk. Combat robotics is inherently dangerous. There is no amount of regulation that can encompass all the dangers involved. Please take care to not hurt yourself or others when building, testing and competing. <br>
+        1.2.	This rule set is designed to for adjustment by each event depending on its safety concerns. <br>
+        1.3.	If you have a robot or weapon design that does not fit within the categories set forth in these rules or is in someway ambiguous or borderline, please contact this event. Safe innovation is always encouraged, but surprising the event staff with your brilliant exploitation of a loophole may cause your robot to be disqualified before it ever competes. <br>
+        1.4.	Compliance with all event rules is mandatory. It is expected that competitors stay within the rules and procedures of their own accord and do not require constant policing. <br>
+        1.5.	Each event has safety inspections. It is at their sole discretion that your robot is allowed to compete. As a builder you are obligated to disclose all operating principles and potential dangers to the inspection staff. <br>
+        1.6.	Cardinal Safety Rules: Failure to comply with any of the following rules could result in expulsion or worse, injury and death. <br>
+        <div class="blockquote">
+            1.6.1.	Radios may not be turned on at or near events for any purpose without obtaining the appropriate frequency clip or explicit permission from the event. <br>
+            1.6.2.	Proper activation and deactivation of robots is critical. Robots must only be activated in the arena, testing areas, or with expressed consent of the event and it's safety officials. <br>
+            1.6.3.	All robots must be able to be FULLY deactivated, which includes power to drive and weaponry,<b> in under 60 seconds by a manual disconnect.</b><br>
+            1.6.4.	All robots not in an arena or official testing area must be raised or blocked up in a manner so that their wheels or legs cannot cause movement if the robot were turned on. Runaway bots are VERY dangerous. <br>
+            1.6.5.	Locking devices:  Moving weapons that can cause damage or injury must have a <b>clearly visible </b>locking device in place <b>at all times </b>when not in the arena.  Locking devices must be painted in neon orange or another high-visibility color.  Locking devices must be clearly capable to stopping, arresting or otherwise preventing harmful motion of the weapon.<br>
+            1.6.6.	Weapon locking pins <b>must be in place </b>when weapon power is applied during a robot's power-on procedure.  This includes <b>all</b> powered weapons regardless of the power source or weight class.  <br>
+            1.6.7.	It is expected that all builders will follow basic safety practices during work on the robot at your pit station. Please be alert and aware of your pit neighbors and people passing by.
+        </div>
+
+    </div>
+
+    2. Weight Classes. This event offers the listed weight classes in section 2.1. There is a 100% weight bonus for <b>walking</b> bots as defined by 3.1.3  below. (There is no weight bonus for <b>any bot not defined as walking in 3.1.3, including shuffling, linear-actuation, gyroscopic procession, flying</b>, or other forms of locomotion which are predicated on rolling. <br>
+    <div class="blockquote">
+        2.1. Weight classes and Bonuses:
+        <table border=1>
+            <tr>
+                <td valign=top><b>Regular</b></td><td valign=top><b>Walking</b></td>
+            </tr>
+            <tr><td valign=top align=right>150 gram</td><td valign=top align=right>300 gram</td>
+            </tr>
+            <tr><td valign=top align=right>1 pound</td><td valign=top align=right>2 pound</td>
+            </tr>
+            <tr><td valign=top align=right>3 pound</td><td valign=top align=right>6 pound</td>
+            </tr>
+            <tr><td valign=top align=right>60 Pound</td><td valign=top align=right>120 Pound</td>
+            </tr>
+            <tr><td valign=top align=right>120 pound</td><td valign=top align=right>240 pound</td>
+            </tr>
+            <tr><td valign=top align=right>220 pound</td><td valign=top align=right>440 pound</td>
+            </tr>
+        </table>
+        <P>
+            2.2.	 Event-specific Weight Classes and Bonuses. This event does not define any additional weight classes or bonuses.<br>
+            2.3.	 1 & 3 lb Autonomous Combat:  This event offers a separate class for 1 & 3 lb autonomous fighting robots.<br>
+        <div class="blockquote">
+            2.3.1.	Arena: The 1 & 3 lb Autonomous class fights in the regular polycarbinate enclosed arena, but with a 3' diameter, raised black fighting surface surrounded by a 1" wide white border.  Robots should try to stay within the white ring.   Falling out of the ring is considered a knock-out.<br>
+            2.3.2.	Autonomous robots must be fully autonomous.  Use of a radio-control device for failsafe is allowed but it must provide NO OTHER FUNCTION than a failsafe signal.<br>
+            &nbsp;&nbsp;&nbsp;2.3.2.1	Robots are started and stopped by use of the above failsafe.<br>
+            &nbsp;&nbsp;&nbsp;2.3.2.2	Robots must stop motion and weapons when failsafe is activated, for safe removal from arena.<br>
+            2.3.3.	Autonomous robots must be self-contained, with all sensors and computing resources on-board and included in the weight.  External sensors, computers, etc. are not allowed.<br>
+            2.3.4.	The additional Autonomous robot rules found in Section 5 apply to the 1 & 3 lb Autonomous class.<br>
+        </div>
+
+    </div>
+
+    3.	Mobility
+    <div class="blockquote">
+        3.1.	All robots must have <b>easily visible and controlled mobility</b> in order to compete. Methods of mobility include: <br>
+        <div class="blockquote">
+            3.1.1. Rolling (wheels, tracks or the whole robot) <br>
+            3.1.2. Non-wheeled: non-wheeled robots have no rolling elements in contact with the floor and no continuous rolling or cam operated motion in contact with the floor, either directly or via a linkage, but are not true walkers as defined below. Motion is "continuous" if continuous operation of the drive motor(s) produces continuous motion of the robot. Linear-actuated legs and novel non-wheeled drive systems are examples, but do not qualify for the "walking bonus."<br>
+            3.1.3. Walking: Walking robots are defined as those with linear-actuated legs which operate independent of each other. That is, any given leg must be able to move laterally and vertically with no cause and effect from another leg. Only walkers as defined by this section qualify for the weight bonus, and only as designated by a tournament official.<br>
+            3.1.4. Shuffling (rotational cam operated legs) is allowed.<br>
+            3.1.5. Gyroscopic procession is allowed.<br>
+            3.1.6. Ground effect air cushions (hovercrafts) are allowed.<br>
+            3.1.7. Jumping and hoppin is allowed.<br>
+            3.1.8. Flying (airfoil using, helium balloons, ornithopters, etc.) is not allowed.
+        </div>
+
+    </div>
+
+    4.	Robot control requirements:
+    <div class="blockquote">
+        4.1.	Tele-operated robots must be radio controlled, or use an approved custom system as described in 4.4.3.  Radio controlled robots must use approved ground frequencies in the 900/2400 for the United States . <br>
+        4.2.	Tethered control is not allowed. <br>
+        4.3.	Pre 1991 non-narrow band radio systems are not allowed. <br>
+        4.4.	Radio system restrictions for this event with corresponding weight and or weapon restrictions:<br>
+        <div class="blockquote">
+            4.4.1.	Radio systems that stop all motion in the robot (drive and weapons), when the transmitter loses power or signal, are required for all robots with active weapons. This may be inherent in the robots electrical system or be part of programmed fail-safes in the radio. <br>
+            4.4.2.	<b><font color="#FF0000">All robots (including insect classes) MUST use a radio system with digitally coded, mated pairs between transmitter and receiver.  This means that no other transmitter, operating on the same frequency, can communicate with your receiver, and your transmitter cannot send signals to any receiver other than your own.  Examples of such systems are Spektrum, IFI, and XPS XtremeLink - these are just examples and should not be taken as a comprehensive list or an endorsement.</font></b><br>
+            4.4.3.	If you are using a home built control system, or a control system not covered here, you must first clear it with this event.<br>
+            4.4.4.	Toy radio systems are not allowed at this event for any robots.<br>
+            4.4.5.	RC systems on the AM band are not allowed at this event for any robots.<br>
+        </div>
+
+        4.5.	This event does not require a separate power switch for the radio, but it is encouraged.<br>
+        4.6.	This event has not reserved frequencies/channels for testing and safety.
+    </div>
+
+    5.	Autonomous/Semi-Autonomous Robots: Any robot that moves, seeks a target, or activates weapons without human control is considered autonomous. If your robot is autonomous you are required to contact this event before registration.
+    <div class="blockquote">
+        5.1.	Autonomous robots must have a clearly visible light for each autonomous subsystem that indicates whether or not it is in autonomous mode, e.g. if your robot has two autonomous weapons it should have two "autonomous mode" lights (this is separate from any power or radio indicator lights used).<br>
+        5.2.	N/A <!--Robots in the 12 pound or under classes are exempt from the remaining rules below, but safe operation, arming, and disarming must be demonstrated in safety inspections. --><br>
+        5.3.	The autonomous functionality of a robot must have the capability of being remotely armed and disarmed. (This does not include internal sensors, drive gyros, or closed loop motor controls.)
+        <div class="blockquote">
+            5.3.1.	While disarmed, all autonomous functions must be disabled. <br>
+            5.3.2.	When activated the robot must have no autonomous functions enabled, and all autonomous functions must failsafe to off if there is loss of power or radio signal.<br>
+            5.3.3.	In case of damage to components that remotely disarm the robot, the robots autonomous functions are required to automatically disarm <b>within one minute of the match length time</b> after being armed.
+        </div>
+    </div>
+
+
+    6.	Batteries and Power <div class="blockquote">
+    6.1.	The only permitted batteries are ones that cannot spill or spray any of their contents when damaged or inverted. This means that standard automotive and motorcycle wet cell batteries are prohibited. Examples of batteries that are permitted: gel cells, Hawkers, NiCads, NiMh, dry cells, AGM, LIon, LiPoly, etc. If your design uses a new type of battery, or one you are not sure about please contact this event.<br>
+    6.2.	All onboard voltages above <b>48 Volts</b> require prior approval from this event. (It is understood that a charged battery's initial voltage state is above their nominal rated value) <br>
+    6.3.	All electrical power to weapons and drive systems (systems that could cause potential human bodily injury) must have a manual disconnect that can be activated within <b>15 seconds</b> without endangering the person turning it off. (E.g. No body parts in the way of weapons or pinch points.)  Shut down must include a <b>manually</b> operated mechanical method of disconnecting the main battery power, such as a switch (Hella, Wyachi, etc) or removable link. Relays may be used to control power, but there must also be a mechanical disconnect. Please note that complete shut down time is specified in section 1.6.<br>
+    6.4.	All efforts must be made to protect battery terminals from a direct short and causing a battery fire. <br>
+    6.5.	If your robot uses a grounded chassis you must have a switch capable of disconnecting this ground. ICE robots are excepted from this rule if there is no practical way to isolate their grounding components. It is required to contact this event for this exception.<br>
+    6.6.	All Robots must have a light easily visible from the outside of the robot that shows its main power is activated.
+</div>
+
+    7.	Pneumatics
+    <div class="blockquote">
+        7.1.	Example diagrams of typical pneumatic systems in robots over 30lbs:
+        <div class="blockquote">
+            7.1.1.	<a href="GeneralPneumaticsCO2.pdf" target=new>CO2 based systems</a><br>
+            7.1.2.	<a href="GeneralPneumaticsHPA.pdf" target=new>High Pressure Air (HPA) based systems</a>
+        </div>
+
+        7.2.	Pneumatic systems on board the robot must only employ non-flammable, nonreactive gases (CO2, Nitrogen and air are most common). It is not permissible to use fiber wound pressure vessels with liquefied gasses like CO2 due to extreme temperature cycling.<br>
+        7.3.	Systems with gas storage of 2 FL OZ or less are exempt from the remaining rules in this section provided they comply with the following:
+        <div class="blockquote">
+            7.3.1.	You must have a safe way of refilling the system and determining the on board pressure.<br>
+            7.3.2.	The maximum actuation pressure is 250 PSI or less.  Some systems may be excepted at the event organizers' discretion, see Section 7.15.<br>
+            7.3.3.	All components must be used within the specifications provided by the manufacturer or supplier. If the specifications aren't available or reliable, then it will be up to the EO to decide if the component is being used in a sufficiently safe manner.																																																																			  </div>
+
+        7.4.	You must have a safe and secure method of refilling your pneumatic system. All pressure vessels must have the standard male quick disconnect for refilling or have an adapter to this fitting. Standard paintball fill fittings available at many retail outlets and online. For specs see Part#12MPS from Foster, <a href="http://www.couplers.com" target=new>http://www.couplers.com</a>.<br>
+        7.5.	All pneumatic components on board a robot must be securely mounted. Particular attention must be made to pressure vessel mounting and armor to ensure that if ruptured it will not escape the robot. (The terms 'pressure vessel, bottle, and source tank' are used interchangeably) <br>
+        7.6.	All pneumatic components within the robot must be rated or certified for AT LEAST the maximum pressure in that part of the system. You may be required to show rating or certification documentation on ANY component in your system. <br>
+        7.7.	All pressure vessels must be rated for at least 120% of the pressure they are used at and have a current hydro test date. (This is to give them a margin of safety if damaged during a fight.) If large actuators, lines, or other components are used at pressures <b>above 250psi</b> these will also need to be over-rated and are requiredto be pre-approved for this event.  <br>
+        7.8.	All primary pressure vessels must have an over pressure device (burst/rupture disk or over pressure 'pop off') set to no more than 130% of that pressure vessels rating. (Most commercially available bottles come with the correct burst assemblies, use of these is encouraged) <br>
+        7.9.	If regulators or compressors are used anywhere in the pneumatic system there must be an (additional) over pressure device downstream of the regulator or compressor set for no more than 130% of the lowest rated component in that part of the pneumatic system. <br>
+        7.10.	All pneumatic systems must have a manual main shut off valve to isolate the rest of the system from the source tank. This valve must be easily accessed for robot de activation and refilling. <br>
+        7.11.	All pneumatic systems must have a manual bleed valve downstream of the main shut off valve to depressurize the system. This bleed valve must be easily accessed for deactivation. This valve must be left OPEN whenever the robot is not in the arena to ensure the system cannot operate accidentally.
+        <div class="blockquote">
+            7.11.1.	It is <b>required</b> to be able to easily bleed all pressure in the robot before exiting the arena. (You may be required to bleed the entire system if it is believed that you have any damaged components.)
+        </div>
+        7.12.	All pneumatic systems must have appropriate gauges scaled for maximum resolution of the pressures in that part of the system.  (There must be gauges on both the high AND low-pressure sides of regulators.)<br>
+        7.13.	If back check valves are used anywhere in the system you must ensure that any part of the system they isolate can be bled and has an over pressure device. <br>
+        7.14.	Any pneumatic system that does not use a regulator, or employs heaters or pressure boosters, or pressures above 2500psi must be pre qualified by this event.<br>
+        7.15.	Please note that some pneumatic systems with very low pressures (below 100 total PSI on board), small volumes (12-16g CO2 cartridges), single firing applications, or pneumatics used for internal actuation (as opposed to external weaponry) may not need to comply with all the rules above. You are required to contact this event if you would like an exception.
+    </div>
+
+    8.	Hydraulics
+    <div class="blockquote">
+        8.1.	N/A <!-- Robots in the 12 lb class or lighter are  limited to 250psi and there must be an easy way to determine this pressure.</b> --><br>
+        8.2.	Hydraulic system pressure (In the actuator/cylinder) must be limited to 10000psi/ 700bar by way of a maximum pressure relief valve<br>
+        8.3.  A hydraulic test point is a mandatory fitment to allow verification of a robots maximum system pressure.  A team will need its own test gauge and hose.<br>
+        8.4.  Hydraulic fluid storage tanks must be of a suitable material and adequately guarded against rupture.<br>
+        8.5   Hydraulic fluid lines and fittings must be to USA Standards and/ or to European DIN specifications.<br>
+        8.6   Hydraulic fluid lines and fittings must be capable of withstanding the maximum working pressures used within the robot.
+        8.7  Hydraulic fluid lines must be routed to minimise the chances of being cut or damaged.<br>
+        8.8  Hydraulic accumulators (pressurised oil storage devices) are banned in whatever form they may take.<br>
+        8.9  All hydraulic systems must use non-flammable, non-corrosive fluid and must be designed not to leak when inverted.<br>
+        8.10  Please note that some simple low pressure and volume hydraulic systems, like simple braking, may not need to adhere to all the rules above. You are required to contact this event if you would like an exception.<br>
+        8.11  Care needs to be taken when building a hydraulic system that consideration is given to bleeding the system of air.  Trapped air in the hydraulic system will degrade the performance of the system and may make a robot run foul of rule 8.8
+    </div>
+
+    9.	Internal Combustion Engines (ICE) and liquid fuels.
+    <div class="blockquote">
+        9.1.	No internal combustion engines are allowed at this event.
+    </div>
+
+    10.	Rotational weapons or full body spinning robots are allowed:
+    <div class="blockquote">
+        10.1.	Spinning weapons that can contact the outer arena walls during normal operation must be pre-approved by the event. (Contact with an inner arena curb, or containment wall is allowed and does not require prior permission.)<br>
+        10.2.	Spinning weapons must come to a full stop within <b>60 seconds </b>of the power being removed using a self-contained braking system.
+    </div>
+
+    <br>
+    11.	Springs and flywheels <br>
+    <div class="blockquote">
+        11.1.	N/A <!-- Springs used in robots in the 12 lbs class or smaller are excepted from the rules in this section. However safe operation and good engineering are always required.--><br>
+        11.2.	Any large springs used for drive or weapon power must have a way of loading and actuating the spring remotely under the robots power. <br>
+        <div class="blockquote">
+            11.2.1.	Under no circumstances must a large spring be loaded when the robot is out of the arena or testing area. <br>
+            11.2.2.	Small springs like those used within switches or other small internal operations are excepted from this rule.
+        </div>
+        11.3.	Any flywheel or similar kinetic energy storing device must not be spinning or storing energy in any way unless inside the arena or testing area. <br>
+        <div class="blockquote">
+            11.3.1.	There must be a way of generating and dissipating the energy from the device remotely under the robots power.
+        </div>
+        11.4.	All springs, flywheels, and similar kinetic energy storing devices must fail to a safe position on loss of radio contact or power.}
+    </div>
+
+    <br>
+    12.	Forbidden Weapons and Materials. The following weapons and materials are absolutely forbidden from use:
+    <div class="blockquote">
+        12.1.	Weapons designed to cause invisible damage to the other robot. This includes but is not limited to:
+        <div class="blockquote">
+            12.1.1.	Electrical weapons <br>
+            12.1.2.	RF jamming equipment, etc. <br>
+            12.1.3.	RF noise generated by an IC engine. (Please use shielding around sparking components) <br>
+            12.1.4.	EMF fields from permanent or electro-magnets that affect another robots electronics. <br>
+            12.1.5.	Weapons or defenses that stop combat completely of both (or more) robots. This includes nets, tapes, strings, and other entanglement devices.
+        </div>
+
+        12.2.	Weapons that require significant cleanup, or in some way damages the arena to require repair for further matches. This includes but is not limited to:
+        <div class="blockquote">
+            12.2.1.	Liquid weapons. Additionally a bot may not have liquid that can spill out when the robot is superficially damaged.<br>
+            12.2.2.	Foams and liquefied gasses<br>
+            12.2.3.	Powders, sand, ball bearings and other dry chaff weapons
+        </div>
+
+        12.3.	Un-tethered Projectiles (see tethered projectile description in Special Weapons section 13.5)<br>
+        12.4.	Heat and explosions are forbidden as weapons. This includes, but is not limited to the following: <br>
+        <div class="blockquote">
+            12.4.1.	Heat  weapons not specifically allowed in the Special Weapons section (13.2)<br>
+            12.4.2.	Explosives or flammable solids such as: <br>
+            <div class="blockquote">
+                12.4.2.1.	DOT Class C devices <br>
+                12.4.2.2.	Gunpowder / Cartridge Primers <br>
+                12.4.2.3.	Military Explosives, etc.
+            </div>
+        </div>
+
+        12.5.	Light and smoke based weapons that impair the viewing of robots by an Entrant, Judge, Official or Viewer. (You are allowed to physically engulf your opponent with your robot however.) This includes, but is not limited to the following:
+        <div class="blockquote">
+            12.5.1.	Smoke weapons not specifically allowed in the Special Weapons section (13.3)<br>
+            12.5.2.	Lights such as external lasers above �class I' and bright strobe lights which may blind the opponent.
+        </div>
+
+        12.6.	Hazardous or dangerous materials are forbidden from use anywhere on a robot where they may contact humans, or by way of the robot being damaged (within reason) contact humans.
+    </div>
+
+    13.	Special weapon descriptions allowed at this event:
+    <div class="blockquote">
+        13.1.	 Tethered Projectiles are not allowed at this event.
+        <div class="blockquote">
+            13.1.1.	If allowed tethered projectiles must have a tether or restraining device that stops the projectile and is no longer than 8 feet.
+        </div>
+        13.2.	Fire / flame throwers are allowed at this event.  Flame weapon rules are subject to change to comply with local fire regulations and fire officials.
+        <div class="blockquote">
+            13.2.1.	Fuel must exit the robot and be ignited as a gas. It cannot leave the robot in a liquid or gelled form or use oxidizers.<br>
+            13.2.2.	Fuel types allowed are propane and butane, the maximum quantity allowed is <!-- 4 fl oz in robots up to 30 lbs, -->16 fl oz for robots 60 lbs and above. <br>
+            13.2.3.	The fuel tank must be as far from the outer armor of the robot as practicable and be protected from heat sources within the robot.<br>
+            13.2.4.	The ignition system must have a remotely operated shut-off that allows the operator to disable it using the radio control system.
+        </div>
+        13.3.	Smoke Effects are not allowed at this event.
+        <div class="blockquote">
+            13.3.1.	Small smoke effects may be not used, please contact the event if you plan on using it.
+        </div>
+    </div>
+
+    14. Match Rules<br>
+    <div class="blockquote">
+
+        14.1. Match Duration<br>
+        Matches shall be 3 minutes long of active fight time, exclusive of any time-outs.<br>
+        <br>
+        14.2. Match Frequency<br>
+        A Combatant is allowed no less than 40 minutes to prepare for the next match. This time is calculated from the time the Combatant leaves the post-match staging area. If the Combatant fails to return to the pre-match staging area when called after the allotted time. the Combatant may be forced to forfeit. It is recommended that any routine maintenance (ie: battery charging) should be capable of being performed well within this time period. In extreme cases the 40 minute time period may be lengthened at the discretion of the event organizers.<br>
+        <br>
+        14.3. Determining a match winner <br>
+        A robot loses a match when one of the following occurs:
+        <div class="blockquote">
+            14.3.1. The robot is knocked out or cannot show sufficient mobility as defined below.<br>
+            14.3.2. The driver of the robot surrenders (see "Taps Out" below.)<br>
+            14.3.3. A robot that is deemed unsafe by Tournament Officials after the match has begun will be disqualified and therefore declared the loser by TKO. The match will be immediately halted and the opponent will be awarded a win. Should the disqualified robot manage to remedy the problem and has yet to compete in the loser's bracket, they will be allowed to return to combat as would any other robot who has one loss. This is subject to approval by the highest ranking Tournament Official on site at the time of the disqualification. This rule is designed solely around the safety of spectators, Combatants and tournament staff.<br>
+            14.3.4. Any robot which attacks or hits an oppponent after the match has been declared over, may be disqualified and loose the match at the sole discretion of the referee.<br>
+            14.3.5. All other matches will be decided by judges' decision.  Judges' decisions are final.
+        </div>
+
+        14.4. Knock-outs and Mobility
+        <div class="blockquote">
+            14.4.1. Knock-out <br>
+            The referee will declare a knock-out when the robot does not show any controlled translational movement after the opponent has ceased attacking for 5 seconds and fails to show controlled translational movement on request by the Referee.<br>
+            <br>
+            The robot will be issued a 10 second countdown.  If the  robot continues to be unable to show controlled translational movement and the opponent still does not attack, then at the end of the 10 second countdown the robot will be issued a loss by KO.<br>
+            <br>
+            Any attack by the opponent, or controlled translational movement of the Robot will reset the time for this determination.<br>
+
+            14.4.1.1. Controlled Translational Movement<br>
+            Movement is "controlled" is the driver of the robot can move the robot across the arena floor by manipulating the remote control, or if an autonomous robot can move across the arena floor on its own.  Orbiting a fixed location on the floor does not constiture "controlled translational movement".  The referee shall decide if movement is "controlled".  As with all official decisions, the referee's call is final.<br>
+
+            14.4.2.1. Contact with the Outer Arena Wall<br>
+            During the course of combat a robot may be brought into contact with the outer arena wall.  Intermittent contact is allowed if, in the opinion of the Referee, the integrity of the outer wall is not threatened.  If the contact continues for an extended period or if the Referee believes the integrity of the outer wall is threatened the Referee will halt the match so the robots can be repositioned so as to no longer threaten the arena integrity.   Restart will be via the "Neutral Corner" procedure as described below.<br>
+
+            14.4.2. Pinning & Lifting<br>
+            Robots may not win by pinning or lifting their opponents. Officials will allow pinning and / or lifting for a maximum of 15 seconds per pin/lift then instruct the attacker to release the pinned/lifted opponent. An attacker that does not stop a pin or lift when requested by the Official may be deemed the match loser at the sole discretion of the referee, unless the two robots are stuck together.
+
+            <div class="blockquote">
+                14.4.2.1. Cornering<br>
+                Keeping an opponent trapped in a corner shall be considered a pin, even if the attacker is not in continuous contact with the cornered opponent.<br>
+
+                14.4.2.2. Releasing a Pinned Opponent<br>
+                If an opponent is held pinned (or cornered), the attacker must move far enough away after releasing the opponent that the opponent has an opportunity to escape for the pin/corner to be considered released and the pin timer stopped.   "Far enough away" will vary by arena and event, since arenas are of different sizes.
+            </div>
+
+            14.4.4. Stranding / High Centering<br>
+            A robot may be intentionally stranded by its opponent on an arena feature (floor seam, arena bumper or wall, etc.)  Stranded robots have 5 seconds to free themselves, after which time they shall be given a 10 second countdown and issued a loss by TKO.
+
+            <div class="blockquote">
+                14.4.5. Stuck or Entangled Robots<br>
+                Matches will be paused to separate robots in the event that they become stuck together in the arena and cannot separate from each other after 5 seconds.<br>
+
+                14.4.5.1. Arena Stranding Hazards<br>
+                It may be possible for a robot to get stuck on or under some part of the arena through its own action or the action of the other robot.  If this happens, regardless of cause, no one will be allowed into the arena to unstick the stuck robot.  It will be counted out as in 14.4.1<br>
+
+                14.4.5.2. Neutral Corner Restart<br>
+                Before restarting a match that has been paused to release stuck robots, the robots may be driven to neutral corners of the arena if directed to do so by a Tournament Official, at the official's sole discretion.   If a robot is unable to move (or cannot move well enough to be easily driven to the indicated corner) it will be left in position.
+            </div>
+
+            14.4.6. Tapping Out<br>
+            Should a Combatant determine their robot is damaged to the point they wish to end the match, they will notify the Tournament Official of their intent. At that point the Official will ask the Combatant to confirm he/she wishes to end the match.  If the Combatant says "Yes", the Official shall instruct the opponent to cease attacking and back away from the Combatant's robot. The Combatant tapping out will be deemed the loser and a win will be awarded to the attacker by TKO<br>
+
+            14.4.7. Forfeit<br>
+            Should a fully registered Combatant forfeit or be disqualified prior to the beginning of a match, their opponent shall be awarded a win.<br>
+
+            14.4.8. Special Considerations for Multi-Bots<br>
+            Robots consisting of physically separate, independently controllable segments are referred to as multi-bots.  As long as at least one of a multi-bot's segments is still able to show movement when requested to do so, that combatant is still considered "alive".  To score a knock-out against a multi-bot, 60% of the multi-bot's segments must be incapacitated or eliminated.<br>
+
+            14.5. Power of Officials<br>
+            Combatants must follow the instructions of Tournament Officials at all times. This is necessary to maintain the safety of everyone at the tournament. Circumstances beyond the scope of these rules and guidelines shall be up to the Officials' decisions. All Officials' decisions are final.
+
+
+        </div>
+
+
+        <a name="judging"></a>
+        15.	Match Judging<br>
+        A panel of judges will determine the winner of matches if te time expires before one combatant is knocked out as defined above.  The number of judges on the panel shall be an odd number (three) to eliminate the possibility of ties.<br>
+        <br>
+        Judges' decisions are final.
+        <div class="blockquote">
+            15.1.	Qualifications<br>
+            Judges must be completely familiar with the Official Rules governing the tournament.<br>
+            <br>
+            Judges must be familiar with the scoring system and Judging Guidelines as defined here.<br>
+            <br>
+            Judges must be reasonably conversant with combat robot design and construction.
+            <div class="blockquote">
+                15.1.1.	Responsibilities<br>
+                Each judge shall officiate in a given robotic combat Tournament with complete impartiality and fairness, respecting and abiding by the rules that govern that tournament, in the true spirit of sportsmanship.<br>
+                <br>
+                Each judge is responsible for keeping track of the Combatants during the course of the match.  Many Combatants look similar, it is the responsibility of each judge to keep them straight and award points correctly.<br>
+                <br>
+                Each judge is expected to take careful note of existing damage when Combatants enter the arena.  Existing damage must not be counted against a Combatant in the event of a judges' decision.<br>
+                <br>
+                Judges must watch the entire match and award points accordingly.  Judges are allowed (and encouraged) to take notes during a match to assist in scoring.<br>
+                <br>
+                15.1.2.	Referee / Judge Foreman<br>
+                One member of the judge's panel will be designated the Judge Foreman. The Judge Foreman will ensure that all other judges are conforming to the guidelines as set forth herein. The Judge Foreman may participate in scoring judges' decisions or simply act as the Referee, depending on the number of judges available.<br>
+                <br>
+                The Judge Foreman will ensure that all Combatants conform to the tournament rules. Warnings and instructions from the Judge Foreman will be issued to the Combatants verbally during the matches. Should a Combatant fail to comply, the Judge Foreman will stop the match and the violating Combatant shall be deemed the loser.<br>
+                <br>
+                The Judge Foreman will determine the point at which a knockout countdown is to begin based on the strict interpretation of the rules.  When a 10 second countdown is warranted by the Judge Foreman, the non-responsive Combatant will be notified and the countdown will begin. The arena announcer will start the countdown at 10 and count down to 0. If the non-responsive robot has not displayed sufficient translational movement as described in the rules, the Combatant will be declared the loser.<br>
+                <br>
+                15.1.3.	Conduct<br>
+                Judges will clearly identify themselves as such.<br>
+                <br>
+                Judges will not consult with each other or the audience while watching or scoring a match.<br>
+                <br>
+                Judges wil not drink alchoholic beverages during their session judging.
+            </div>
+        </div>
+        <div class="blockquote">
+            15.2.	Judges' Decisions: Scoring<br>
+            When a match does not end in the elimination of one of the Combatants as defined by the Tournament Rules and Procedures the winner shall be determined by a Judges' Decision.  In a Judges' Decision the points awarded to the Combatants by the panel of judges are totaled and the winner with the majority of points is declared the winner.
+            <div class="blockquote">
+                15.2.1.	Point Scoring System<br>
+                Points are awarded in 2 categories:<ul>
+                <li>Aggression - 5 points
+                <li>Damage - 6 points
+            </ul>
+                All points must be awarded - each judge will determine how many points to award each Combatant in each category, according to the Judging Guidelines (see below).  The maximum possible score a Combatant receives is 11 * (number of judges).  Thus, a single judge will award a total of 11 points, and a 3 judge panel will award a total of 33 points.<br>
+                <br>
+                15.2.2.	Judging Guidelines
+                <div class="blockquote">
+                    15.2.2.1.	Scoring Aggression<br>
+                    Aggression scoring will be based on the relative amount of time each robot spends attacking the other.<br>
+                    <br>
+                    Attacks do not have to be successful to count for aggression points, but a distinction will be made between chasing a fleeing opponent and randomly crashing around the arena.<br>
+                    <br>
+                    Points will not be awarded for aggression if a robot is completely uncontrollable or unable to do more than turn in place, even if it is trying to attack.<br>
+                    <br>
+                    Sitting still and waiting for your opponent to drive into your weapon does not count for aggression points, even if it is an amazingly destructive weapon. Robot must show translational movement torward their opponent for it to be counted as aggression.<br>
+                    <br>
+                    Awarding Aggression Points<ul>
+                    <li>5-0: a 5-0 score shall be awarded only when one of the robots never attempts to attack  the other, and the other consistently attacks.<br>
+                        <br>
+                    <li>4-1: a score of 4-1 shall be awarded in the case of significant dominance of attacks by one robot, with the other only attempting to attack a few times during the match.<br>
+                        <br>
+                    <li>3-2: a 3-2 score shall be awarded when
+                        <ul>
+                            <li>Both robots consistently attack the other.<br>
+                            <li>Both robots only attack the other for part of the match.<br>
+                            <li>Both robots spend most of the match avoiding each other. In this case it will be up to the judge's discretion to decide which robot made more attempts to make attack the other.<br>
+                            <li>A Combatant who attacks a full-body spinner (e.g. intentionally drives within the perimeter of the spinning weapon) is automatically considered the aggressor and awarded a 3-2 score in the case where either robots consistently attack, or both robots consistently avoid each other.<br>
+                            <li>There can be no ties in aggression.  Judges must decide that one robot is more aggressive than the other.
+                        </ul>
+                        Note: a Combatant is considered a "full body spinner" if the robot cannot be attacked without moving within the perimeter of the spinning weapon.</ul>
+                    15.2.2.2.	Scoring Damage<br>
+                    Judges should be knowledgeable about how different materials are damaged. Some materials such as Titanium will send off bright sparks when hit but are still very strong and may be largely undamaged. Other materials such as Aluminum will not send off bright sparks when hit.  Judges should not be influenced by things like sparks, but rather how deep or incapacitating a "wound" is.<br>
+                    <br>
+                    Judges should be knowledgeable about the different materials used in Bot construction and how damage to these materials can reduce a Bot's functionality.  Judges should not to be unduly influenced by highly visual damage that doesn't affect a Combatant's functionality effectiveness or defensibility.  For example, a gash in a Combatant's armor may be very visible but only minimally reduce the armor's functionality.<br>
+                    <br>
+                    Judges should look for damage that may not be visually striking but affects the functionality of a Combatant. For example:
+                    <ul>
+                        <li>a small bend in a lifting arm or spinner weapon may dramatically affect its functionality by preventing it from having its full range of motion<br>
+                        <li>bent armor or skirts can prevent the Combatant from resting squarely on the floor, reducing the effectiveness of the drive train<br>
+                        <li>A wobbly wheel indicates that it is bent and will not get as much traction.<br>
+                        <li>Cuts or holes through armor may mean there is more damage inside.
+                    </ul>
+                    Trivial:<ul>
+                    <li>Flip over (or being propelled onto bumper, ramp, or other obstacle) causing no loss of mobility or loss of weapon functionality, except where flipping causes full loss of mobility and robot is unable to show translational movement.<br>
+                    <li>Direct impacts which do not leave a visible dent or scratch.<br>
+                    <li>Sparks resulting from strike of opponent's weapon<br>
+                    <li>Being lifted in the air with no damage and no lasting loss of traction.</ul>
+                    Cosmetic:<ul>
+                    <li>Visible scratches to armor.<br>
+                    <li>Non-penetrating cut or dent or slight bending of armor or exposed frame.<br>
+                    <li>Removal of non-structural, non-functional cosmetic pieces (dolls, foliage, foam, or "ablative" armor).<br>
+                    <li>Damage to wheel, spinning blade, or other exposed moving part not resulting in loss of functionality or mobility.</ul>
+                    Minor:<ul>
+                    <li>Flip over (or being propelled onto bumper or other obstacle) causing some loss of mobility or control or making it impossible to use a weapon.
+                    <li>Intermittent smoke not associated with noticeable power drop.<br>
+                    <li>Penetrating dent or small hole.<br>
+                    <li>Removal of most or all of a wheel, or saw blade, spike, tooth, or other weapon component, which does not result in a loss of functionality or mobility.<br>
+                    <li>Slightly warped frame not resulting in loss of mobility or weapon function.</ul>
+                    Significant:<ul>
+                    <li>Continuous smoke, or smoke associated with partial loss of power of drive or weapons.<br>
+                    <li>Torn, ripped, or badly warped armor or large hole punched in armor.<br>
+                    <li>Damage or removal of wheels resulting in impaired mobility<br>
+                    <li>damage to rotary weapon resulting in loss of weapon speed or severe vibration<br>
+                    <li>damage to arm, hammer, or other moving part resulting in partial loss of weapon functionality.<br>
+                    <li>Visibly bent or warped frame.</ul>
+                    Major: <ul>
+                    <li>Smoke and visible fire.<br>
+                    <li>Armor section completely removed exposing interior components.<br>
+                    <li>Removal of wheels, spinning blade, saw, hammer, or lifting arm, or other major component resulting in total loss of weapon functionality or mobility.<br>
+                    <li>Frame warping causing partial loss of mobility or complete loss of functionality of weapon system.<br>
+                    <li>Internal components (batteries, speed controller, radio, motor) broken free from mounts and resting or dragging on the arena floor.<br>
+                    <li>Significant leak of hydraulic fluid.<br>
+                    <li>Obvious leaks of pneumatic gases.</ul>
+                    Massive:<ul>
+                    <li>Armor shell completely torn off frame.<br>
+                    <li>Major subassemblies torn free from frame.<br>
+                    <li>Loss of structural integrity - major frame or armor sections dragging or resting on floor.<br>
+                    <li>Total loss of power.</ul>
+                    Post-Match Inspection<br>
+                    Judges may request the combatant's to demonstrate operability of their robot's drive train and/or weapon following the end of the match, before the arena doors are opened.<br>
+                    <br>
+                    Judges may inspect the Combatant's robot after a match to determine how best to award damage points.  If a judge needs to examine one or both of the Combatants robot's before awarding damage points, he or she will notify the Stage Manager or other designated official immediately after the end of the match.   The inspection will be conducted by the entire panel.  The judges will not handle the Combatant's robot.  The driver or a designated team member will handle the Combatant's robot.  A member of the opponent's team will be present during any such inspection.<br>
+                    <br>
+                    Awarding Damage Points<br>
+                    Scoring of damage points is based on relative grading of each robot's damage.
+                    <ul>
+                        <li>6-0: a 6-0 score shall be awarded when:<ul>
+                            <li>one robot suffers nothing more than trivial damage, and the other is at least significantly damaged<br>
+                            <li>one robot has suffered major or massive damage and the other is no more than cosmetically damaged.</ul>
+                        <li>5-1:  a 5-1 score shall be awarded when:<ul>
+                            <li>one robot suffers at least minor damage and the other suffers major or worse damage<br>
+                            <li>One robot has suffered cosmetic damage and the other has suffered at least significant damage.</ul>
+                        <li>4-2: a 4-2 score shall be awarded when:<ul>
+                            <li>both robots have suffered nearly the same level of damage but one is slightly more damaged than the other</ul>
+                        <li>3-3: a 3-3 score shall be awarded when:<ul>
+                            <li>both robots have suffered the same level of damage, or<br>
+                            <li>neither robot has even cosmetically damaged the other</ul>
+                    </ul>
+                    Damage that is self-inflicted by a robot's own systems and not directly or indirectly caused by contact with the other robot or an active arena hazard will not be counted against that robot for scoring purposes.
+                </div>
+            </div>
+        </div>
+
+
+
+
+</div>
+
+<!-- All marshall js files -->
+<script type="text/javascript" src="jquery-3.1.1.min.js"></script>
+<script type="text/javascript" src="simplyCountdown.min.js"></script>
+<script type="text/javascript" src="jquery.ajaxchimp.min.js"></script>
+<script type="text/javascript" src="main.js"></script>
+
+
+</body></html>
