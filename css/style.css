@@ -1299,7 +1299,7 @@ span.close-newsletter i{
   background-color: #E00A62;
 }
 .marshall-newsletter-content .marshall_submit::after {
-  background-image: url("tick.png");
+  background-image: url("/images/tick.png");
   background-size: 100% auto;
   content: "";
   display: block;

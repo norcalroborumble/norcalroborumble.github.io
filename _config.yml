@@ -1,0 +1,16 @@
+title: NorCal RoboRumble
+email: info@norcalroborumble.com
+description: "NorCal RoboRumble Robotics Competition"
+baseurl: ""
+url: "http://www.norcalroborumble.com"
+
+# Build settings
+markdown: kramdown
+
+gems:
+- jekyll-gist
+- jekyll-redirect-from
+
+
+# Ignore non-website content
+exclude: ['.gitignore', 'Gemfile', 'Gemfile.lock', 'README.md', 'LICENSE.txt', 'CNAME']
