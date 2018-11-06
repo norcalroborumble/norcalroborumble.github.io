@@ -3937,30 +3937,29 @@ h1, h2, h3, h4, h5, h6 {
   padding-top: 1em;
 }
 
+
 #middle-section ul {
-  background-color: #ffffff85;
-  line-height: 2;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
 }
 
 #middle-section li {
+  border-right: 3px solid #0b0b2d;
+  list-style: none inside none;
+  display: inline-block;
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-  list-style: none inside none;
 }
-
-#middle-section img {
-    max-width: 196px;
-    height: 4em;
-    vertical-align: bottom;
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-}
-
-#middle-section img {
-    border-right: 3px solid #0b0b2d;
-}
-#middle-section img:last-of-type {
+#middle-section li:last-of-type {
     border-right: none;
+}
+
+#middle-section img {
+  vertical-align: bottom;
+  max-width: 184px;
+  height: 4em;
 }
 
 #bottom-section {
