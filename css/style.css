@@ -3946,6 +3946,8 @@ button {
   padding: 1rem 1.5rem;
   color: #fff;
   border: none;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 .sans-serif {
@@ -3963,4 +3965,14 @@ button {
 .standard-section {
   background-color: #fff;
   color: #0b0b2d;
+}
+
+hr {
+  border-color: #acc8d6;
+}
+
+nav a {
+  font-weight: bold;
+  margin-right: 1rem;
+  font-size: 1.5rem;
 }
