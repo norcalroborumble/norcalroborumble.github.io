@@ -3949,14 +3949,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #middle-section img {
-    max-width: 280px;
+    max-width: 196px;
+    height: 4em;
     vertical-align: bottom;
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
 }
 
-#middle-section img:first-of-type {
+#middle-section img {
     border-right: 3px solid #0b0b2d;
+}
+#middle-section img:last-of-type {
+    border-right: none;
 }
 
 #bottom-section {
