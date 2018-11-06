@@ -63,7 +63,6 @@ body{
   font-family: 'Open Sans', Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #131623;
   line-height: 1.5;
   font-weight: 400;
   overflow-x: hidden;
@@ -591,8 +590,6 @@ body.mrs-white .morph-button-modal-2 .morph-content {
   display: inline-block;
   max-width: 130px;
 }
-
-
 
 /* -----------------------------------------------------------------
   6. Content
@@ -1299,7 +1296,7 @@ span.close-newsletter i{
   background-color: #E00A62;
 }
 .marshall-newsletter-content .marshall_submit::after {
-  background-image: url("/images/tick.png");
+  background-image: url("tick.png");
   background-size: 100% auto;
   content: "";
   display: block;
@@ -3849,4 +3846,121 @@ body.mrs-v52 .marshall-the_content .marshall-works-heading-inner h2 {
 
 
 
+/*New CSS*/
 
+body {
+  background-image: url("/images/BG.png");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Bree Serif', serif;
+}
+
+.logo {
+  max-width: 600px;
+  margin: 0 auto;
+  display: block;
+  width: 60%;
+  margin-bottom: -8rem;
+  z-index: 100;
+  position: relative;
+}
+
+#top-section {
+  background-color: #ffffff;
+  color: #0b0b2d;
+  padding-top: 4rem;
+  text-align: center;
+  position: relative;
+}
+
+#top-section :after{
+  position:absolute;
+  top:100%;
+  left:0;
+  content:'';
+  height:0;
+  width:0;
+  border-right:100vw solid #ffffff;
+  border-bottom:10vw solid transparent;
+  border-top:0px solid transparent;
+  overflow:hidden;
+}
+
+#top-section :before{
+  position:absolute;
+  top:-10vw;
+  left:0;
+  content:'';
+  height:0;
+  width:0;
+  border-left:100vw solid #ffffff;
+  border-top:10vw solid transparent;
+  border-bottom:0px solid transparent;
+  overflow:hidden;
+}
+
+#schedule-section {
+  color: #0b0b2d;
+  position: relative;
+  padding-top: 10vw;
+}
+
+#schedule-section tr {
+  background-color: #ffffff85;
+  line-height: 2;
+}
+
+#schedule-section td {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+#schedule-section td:first-of-type {
+  background-color: #ffffff;
+  border-left: 3px solid #0b0b2d;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.divider {
+  background-image: linear-gradient(-135deg, #0B6CFF 0%, #FF5F5F 100%);
+  box-shadow: 0 12px 24px 0 rgba(98,161,255,0.39);
+  width: 3rem;
+  height: 0.3rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+
+button {
+  background-image: linear-gradient(-135deg, #0B6CFF 0%, #FF5F5F 100%);
+  box-shadow: 0 12px 24px 0 rgba(98,161,255,0.39);
+  padding: 1rem 1.5rem;
+  color: #fff;
+  border: none;
+}
+
+.sans-serif {
+  font-family: "Open Sans";
+}
+
+.muted {
+  opacity: 0.5;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.standard-section {
+  background-color: #fff;
+  color: #0b0b2d;
+}
