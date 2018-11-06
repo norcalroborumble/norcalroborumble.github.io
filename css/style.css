@@ -3958,8 +3958,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #middle-section img {
   vertical-align: bottom;
-  max-width: 184px;
-  height: 4em;
+  max-width: 220px;
 }
 
 #bottom-section {
@@ -4077,7 +4076,7 @@ nav a {
   margin: 0.4rem;
   box-shadow: 0 12px 24px 0 rgba(98,161,255,0.19);
   border-top: 2px solid #0b0b2d;
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 .competitions strong {
