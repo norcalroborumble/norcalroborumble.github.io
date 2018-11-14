@@ -3982,6 +3982,38 @@ h1, h2, h3, h4, h5, h6 {
   list-style: none inside none;
 }
 
+
+#raffle-section {
+  color: #0b0b2d;
+  position: relative;
+}
+
+#raffle-section ul {
+  text-align: left;
+  position: relative;
+}
+
+#raffle-section {
+  text-align: center;
+  position: relative;
+}
+
+.lb-img img {
+  max-height: 200px;
+}
+
+.raffle-gallery {
+  list-style: none;
+  text-align: center;
+  padding-left: 0;
+  margin-bottom: 36px;
+}
+
+.raffle-gallery li {
+  display: inline-block;
+  padding: 0 6px;
+}
+
 #footer-section .menu {
     display: block;
     text-align: center;

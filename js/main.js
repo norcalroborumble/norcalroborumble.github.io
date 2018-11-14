@@ -603,7 +603,11 @@ if ( $('#particles-js').is_exist() ) {
     retina_detect: true
   });
 }
-
+    new LuminousGallery(document.querySelectorAll('.lb-img'), {}, {
+        caption: function (trigger) {
+            return trigger.querySelector('img').getAttribute('alt');
+        }
+    });
 
 
 }); // end document ready
