@@ -3952,18 +3952,10 @@ h1, h2, h3, h4, h5, h6 {
   padding-right: 0.5rem;
 }
 
-@media (min-width: 726px) {
-    #middle-section li {
-        border-right: 3px solid rgba(11, 11, 45, 0.16);
-    }
-    #middle-section li:last-of-type {
-        border-right: none;
-    }
-}
 
 #middle-section img {
   vertical-align: bottom;
-  max-width: 220px;
+  max-width: 320px;
 }
 
 #bottom-section {
